@@ -10,8 +10,7 @@ gram_dict_with_values = {}
 for search_term_row in all_serach_term_data_dict:
     #for gram in gram_vecs:
         #if search_term_row['Search term'] == gram or gram + " " in search_term_row['Search term'] or " " + gram in search_term_row['Search term']:
-        listOfMatches = re.findall(stringOfGramVecs, 
-        search_term_row['Search term'])
+        listOfMatches = re.findall(stringOfGramVecs, search_term_row['Search term'])
         for gram in listOfMatches:
             if gram not in gram_dict_with_values.keys():
                 gram_dict_with_values[gram] = {
